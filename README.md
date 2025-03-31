@@ -1,6 +1,7 @@
 # tmdbcli
 The Movie Database (TMDB) command line API tool for fetching movies.
 With this mini tool you can get a list of upcoming, top rated, popular or now playing movies.
+Original project URL https://roadmap.sh/projects/tmdb-cli
 
 ## Example usage
 
@@ -35,7 +36,7 @@ Currently showing 20 movie titles on page 3
 - requests, dotenv modules
 - [TMDB API key](https://www.themoviedb.org/login)
 
-### Installation
+## Installation
 
 1. Clone repository
 
