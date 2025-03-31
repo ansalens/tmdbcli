@@ -1,33 +1,33 @@
 # tmdbcli
 The Movie Database (TMDB) command line API tool for fetching movies.
 With this mini tool you can get a list of upcoming, top rated, popular or now playing movies.
-Original project URL https://roadmap.sh/projects/tmdb-cli
+[Original project URL.](https://roadmap.sh/projects/tmdb-cli)
 
 ## Example usage
 
 ```sh
-$ python3 tmdbcli.py -t top -p 3
-Currently showing 20 movie titles on page 3
- 1. Gabriel's Inferno: Part III
- 2. Hope
- 3. Whiplash
- 4. Se7en
- 5. Radical
- 6. Inception
- 7. Rear Window
- 8. The Legend of Hei
- 9. The Silence of the Lambs
-10. Spider-Man: Across the Spider-Verse
-11. American History X
-12. High and Low
-13. Lucy Shimmers and the Prince of Peace
-14. The Wild Robot
-15. Princess Mononoke
-16. Dou kyu sei – Classmates
-17. Ikiru
-18. Back to the Future
-19. The Quintessential Quintuplets Movie
-20. A Brighter Summer Day
+$ python3 tmdbcli.py -t popular -p 2
+Currently showing 20 movie titles on page 2
+ 1. The Gorge
+ 2. Demon City
+ 3. Frogman
+ 4. Hellhound
+ 5. The Monkey
+ 6. A Minecraft Movie
+ 7. The Vigilante
+ 8. Sky Force
+ 9. Dark Match
+10. Companion
+11. I, the Executioner
+12. Kraven the Hunter
+13. Amaran
+14. Plankton: The Movie
+15. Giro final
+16. Venom: The Last Dance
+17. Flow
+18. Memoir of a Snail
+19. Solo Leveling -ReAwakening-
+20. Mickey 17
 ```
 
 ## Prerequisites
@@ -63,9 +63,15 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-5. Create your own .venv and put your API key inside it
+5. Create your own .env file and put your API key inside it following the format
 
 ```sh
 API_KEY=insert_api_key_here
+```
+
+- Or use output redirection to create .env file from shell
+
+```bash
+echo "API_KEY=insert_api_key_here" > .env
 ```
 
