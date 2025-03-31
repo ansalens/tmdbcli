@@ -31,8 +31,14 @@ def fetch_movies(movie_type, page_number):
         raise SystemExit(json_err)
 
     print("Currently showing {} movie titles on page {}".format(len(response_json["results"]), response_json["page"]))
+
     for index, movie in enumerate(response_json["results"], start=1):
-        print("{:>2}. {}".format(index, movie["title"]))
+        rating = movie["vote_average"]
+        date_release = movie["release_date"]
+        title = movie["title"]
+        print(f"{index:>2}. {title}")
+        print(f"{" ":>4}| Rating: {rating:>5.1f}")
+        print(f"{" ":>4}| Released: {date_release}")
 
 
 def main():

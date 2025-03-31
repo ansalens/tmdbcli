@@ -3,31 +3,32 @@ The Movie Database (TMDB) command line API tool for fetching movies.
 With this mini tool you can get a list of upcoming, top rated, popular or now playing movies.
 [Original project URL.](https://roadmap.sh/projects/tmdb-cli)
 
+### Features
+
+- Obtain details (rating/release date) about now playing, top rated, upcoming and popular movies 
+- View movie details from other pages
+
 ## Example usage
 
 ```sh
-$ python3 tmdbcli.py -t popular -p 2
+$ python3 tmdbcli.py -t top -p 2
 Currently showing 20 movie titles on page 2
- 1. The Gorge
- 2. Demon City
- 3. Frogman
- 4. Hellhound
- 5. The Monkey
- 6. A Minecraft Movie
- 7. The Vigilante
- 8. Sky Force
- 9. Dark Match
-10. Companion
-11. I, the Executioner
-12. Kraven the Hunter
-13. Amaran
-14. Plankton: The Movie
-15. Giro final
-16. Venom: The Last Dance
-17. Flow
-18. Memoir of a Snail
-19. Solo Leveling -ReAwakening-
-20. Mickey 17
+ 1. Fight Club
+    | Rating:   8.4
+    | Released: 1999-10-15
+ 2. Cinema Paradiso
+    | Rating:   8.4
+    | Released: 1988-11-17
+ 3. Counterattack
+    | Rating:   8.4
+    | Released: 2025-02-27
+ 4. City of God
+    | Rating:   8.4
+    | Released: 2002-08-30
+ 5. Psycho
+    | Rating:   8.4
+    | Released: 1960-06-22
+<snip>
 ```
 
 ## Prerequisites
@@ -41,8 +42,7 @@ Currently showing 20 movie titles on page 2
 1. Clone repository
 
 ```sh
-git clone https://github.com/ansalens/tmdbcli
-cd tmdbcli
+git clone https://github.com/ansalens/tmdbcli; cd tmdbcli
 ```
 
 2. Create a virtual environment
